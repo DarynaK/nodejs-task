@@ -4,7 +4,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch('https://swapi.dev/api/' + input.value).then((response) => {
     response.json().then(data => {
-        console.log(data)
+        // console.log(data)
     }).catch(error => console.log(error))
 }).catch(error => console.log(error))
 })
